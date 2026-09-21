@@ -3,6 +3,6 @@
   
  host: localhost 
  task:  
-  - name: ubuntu
+  - name: lenux
   - status: started 
 
