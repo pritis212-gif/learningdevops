@@ -5,4 +5,4 @@
  task:  
   - name: lenux
   - status: started 
-
+  - service: enabled
