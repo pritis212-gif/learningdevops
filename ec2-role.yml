@@ -12,6 +12,11 @@ Resources:
           ToPort: 22
           CidrIp: 0.0.0.0/0
 
+          IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0
+
   MyEC2Instance:
     Type: AWS::EC2::Instance
     Properties:
@@ -22,4 +27,4 @@ Resources:
         - !Ref MyInstanceSecurityGroup
       Tags:
         - Key: Name
-          Value: pipeline server
+          Value: second pipeline server
