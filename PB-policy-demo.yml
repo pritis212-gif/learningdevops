@@ -6,6 +6,8 @@ Resources:
     Type: 'AWS::IAM::ManagedPolicy'
     Properties:
       ManagedPolicyName: 'PB-Admin-Policy'
+      Roles:
+        - madebyprity
       PolicyDocument:
         Version: '2012-10-17'
         Statement:
